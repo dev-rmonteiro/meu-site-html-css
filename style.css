@@ -1,0 +1,92 @@
+header {
+  background-color:rgba(182, 71, 204, 0.3);
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  float: left;
+  margin: 5px;
+}
+
+nav ul li a { /* Configs dos itens da lista*/
+  color: white;
+  display: block;
+  font-size: 15px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito quando o cursor passa sobre o link */
+nav ul li a:hover {
+  background: linear-gradient(45deg, #c978d4, #819fd4);
+  transform: scale(1.1); /* Um leve zoom */
+}
+
+body {
+  background-image: url('image1.jfif');
+  background-size: cover;           /* Faz a imagem cobrir todo o fundo */
+  background-repeat: no-repeat;     /* Evita que a imagem se repita */
+  background-position: center;      /* Centraliza a imagem */
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  text-align: center;
+}
+
+.caixa-1 {
+  align-items: center;      /* Alinha verticalmente */
+  border-radius: 8px;
+  background: plum;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: inline-block;
+  height: 100px;             /* Altura fixa */
+  justify-content: center;  /* Alinha horizontalmente */
+  margin-top: 30px;
+  padding: 30px;
+  width: 320px;             /* Largura fixa */
+}
+
+.caixa-1 h1 {
+  font-size: 25px
+}
+
+.caixa-1 p {
+  font-size: 15px
+}
+
+.caixa-2 {
+  align-items: center;      /* Alinha verticalmente */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: rgb(238, 215, 237);
+  border-radius: 8px;
+  display: inline-block;
+  height: 135px;             /* Altura fixa */
+  justify-content: center;  /* Alinha horizontalmente */
+  margin-top: 30px;
+  padding: 30px;
+  width: 320px;             /* Largura fixa */
+
+}
+
+.caixa-2 h1 {
+  font-size: 15px
+}
+
+.caixa-2 p {
+  font-size: 11px
+}
