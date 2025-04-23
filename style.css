@@ -139,3 +139,18 @@ body {
   background-color: #b02ac5;
   border-top: 1px solid #ccc;
 }
+
+main {
+  flex: 1;
+  width: 80%;
+}
+
+footer {
+  text-align: center;
+  padding: 0,5rem;
+  background-color: rgba(184, 216, 255, 0.7); /* cor de fundo */
+  color: white;                         /* cor do texto */
+  font-size: 0.9rem;
+  bottom: 0;
+  width: 100%;
+}
