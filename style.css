@@ -1,5 +1,5 @@
 header {
-  background-color:rgba(182, 71, 204, 0.3);
+  background-color: rgba(182, 71, 204, 0.3);
 }
 
 nav {
@@ -8,85 +8,134 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  list-style-type: none;
   justify-content: center;
   overflow: hidden;
-  padding: 0;
+  padding: 0; /* Corrigido */
 }
 
 nav ul li {
   display: inline;
   float: left;
-  margin: 5px;
+  margin: 0.3rem; /* ~5px */
 }
 
-nav ul li a { /* Configs dos itens da lista*/
+nav ul li a {
   color: white;
   display: block;
-  font-size: 15px;
-  margin: 10px;
-  padding: 10px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  margin:0.6rem;
+  padding:0.6rem;
+  text-decoration:none;
+  transition:background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efeito quando o cursor passa sobre o link */
 nav ul li a:hover {
   background: linear-gradient(45deg, #c978d4, #819fd4);
-  transform: scale(1.1); /* Um leve zoom */
+  transform: scale(1.1);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url('image1.jfif');
-  background-size: cover;           /* Faz a imagem cobrir todo o fundo */
-  background-repeat: no-repeat;     /* Evita que a imagem se repita */
-  background-position: center;      /* Centraliza a imagem */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
-  padding: 50px;
-  text-align: center;
+  padding: 1rem; /* espaçamento interno */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* ~32px */
+  width: 90%;
+}
+
+/*.texto-com-imagem-1 img {
+  width: 10%;         /* O GIF ocupará 80% da largura da tela
+  max-width: 25rem;   /* Limita a largura do GIF para 400px
+  height: auto;       /* Ajusta a altura proporcionalmente
+  object-fit: contain; /* Garante que o GIF não estique ou distorça
+}*/
+
+.caixa-1,
+.caixa-2 {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* ~10px */
+  padding: 2rem;
+  width: 100%;
+  max-width: 40rem; /* 400px */
+  margin: 1rem auto;
+  
 }
 
 .caixa-1 {
-  align-items: center;      /* Alinha verticalmente */
-  border-radius: 8px;
   background: plum;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  display: inline-block;
-  height: 100px;             /* Altura fixa */
-  justify-content: center;  /* Alinha horizontalmente */
-  margin-top: 30px;
-  padding: 30px;
-  width: 320px;             /* Largura fixa */
-}
-
-.caixa-1 h1 {
-  font-size: 25px
-}
-
-.caixa-1 p {
-  font-size: 15px
+  height: auto; /* Altura adaptável ao conteúdo */
 }
 
 .caixa-2 {
-  align-items: center;      /* Alinha verticalmente */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  background: rgb(238, 215, 237);
-  border-radius: 8px;
-  display: inline-block;
-  height: 135px;             /* Altura fixa */
-  justify-content: center;  /* Alinha horizontalmente */
-  margin-top: 30px;
-  padding: 30px;
-  width: 320px;             /* Largura fixa */
+  background: rgb(251, 195, 249);
+  height: auto; /* Altura adaptável ao conteúdo */
+}
 
+.caixa-1 h1 {
+  text-align: center;
+  font-size: 1.25rem; /* ~20px */
 }
 
 .caixa-2 h1 {
-  font-size: 15px
+  text-align: center;
+  font-size: 1.25rem; /* ~20px */
+}
+
+.caixa-1 p {
+  text-align: center;
+  font-size: 1rem; /* ~16px */
 }
 
 .caixa-2 p {
-  font-size: 11px
+  text-align: center;
+  font-size: 0.875rem; /* ~14px */
+}
+
+.accordion-btn {
+  background-color: #dcb4e6;
+  color: #333;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+  background-color: #c78ed9;
+  background: linear-gradient(45deg, #c978d4, #819fd4);
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background-color: #b02ac5;
+  border-top: 1px solid #ccc;
 }
