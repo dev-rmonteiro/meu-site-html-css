@@ -107,7 +107,8 @@ nav ul li a:hover {
   padding: 20px; /* Ajuste conforme necessário */
 }
 
-#dadosHTML h2 {  /*Configs do texto*/
+#dadosHTML h2,
+#dadosHTML h6 {  /*Configs do texto*/
   padding-right: 0.55rem;
   padding-left: 0.55rem;
   padding-top: 0.55rem;
