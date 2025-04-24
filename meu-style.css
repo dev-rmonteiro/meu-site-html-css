@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: rgba(182, 71, 204, 0.3);
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0; /* Corrigido */
+  }
+  
+  nav ul li {
+    display: inline;
+    float: left;
+    margin: 0.3rem; /* ~5px */
+  }
+  
+  nav ul li a {
+    color: white;
+    display: block;
+    font-size: 1rem;
+    margin:0.6rem;
+    padding:0.6rem;
+    text-decoration:none;
+    transition:background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background: linear-gradient(45deg, #c978d4, #819fd4);
+    transform: scale(1.1);
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    flex-direction: column;
+  /*  align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; */
+    background-image: url('image1.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 0; /* espaçamento interno */
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* ~32px */
+    width: 100%;
+  }
+  
+  /*.texto-com-imagem-1 img {
+    width: 10%;         /* O GIF ocupará 80% da largura da tela
+    max-width: 25rem;   /* Limita a largura do GIF para 400px
+    height: auto;       /* Ajusta a altura proporcionalmente
+    object-fit: contain; /* Garante que o GIF não estique ou distorça
+  }*/
+  
+  .caixa-1,
+  .caixa-2 {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* ~10px */
+    padding: 2rem;
+    width: 100%;
+    max-width: 40rem; /* 400px */
+    margin: 1rem auto;
+    
+  }
+  
+  .caixa-1 {
+    background: plum;
+    height: auto; /* Altura adaptável ao conteúdo */
+  }
+  
+  .caixa-2 {
+    background: rgb(251, 195, 249);
+    height: auto; /* Altura adaptável ao conteúdo */
+  }
+  
+  .caixa-1 h1 {
+    text-align: center;
+    font-size: 1rem; /* ~20px */
+  }
+  
+  .caixa-2 h1 {
+    text-align: center;
+    font-size: 1rem; /* ~20px */
+  }
+  
+  .caixa-1 p {
+    text-align: center;
+    font-size: 0.8rem; /* ~16px */
+  }
+  
+  .caixa-2 p {
+    text-align: center;
+    font-size: 0.8rem; /* ~14px */
+  }
+  
+  .accordion-btn {
+    background-color: #b02ac5;
+    color: #371141;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-btn:hover {
+    background-color: #c78ed9;
+    background: linear-gradient(45deg, #c978d4, #819fd4);
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: #cf97dd;
+    border-top: 0.0625rem solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .accordion-content p,
+  .accordion-content ul {
+    color: #450d4e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgba(184, 216, 255, 0.7); /* cor de fundo */
+    color: white;                         /* cor do texto */
+    font-size: 0.9rem;
+    bottom: 0;
+    width: 100%;
+  }
